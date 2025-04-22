@@ -38,6 +38,11 @@ local.properties
 # node.js
 #
 node_modules/
+.expo/
+.expo-shared/
+.env
+*.db
+.DS_Store
 npm-debug.log
 yarn-error.log
 
