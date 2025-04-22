@@ -108,7 +108,7 @@ export default function FormScreen({ route, navigation }) {
             behavior={Platform.OS === 'android' ? 'height' : 'padding'} 
             keyboardVerticalOffset={100}
         >
-            <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+            <ScrollView contentContainerStyle={[styles.scroll, { padding: 20}]} keyboardShouldPersistTaps="handled">
                 {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
                 <Text style={styles.label}>Producto:</Text>
